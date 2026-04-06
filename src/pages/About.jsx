@@ -18,7 +18,7 @@ function About() {
 
           <div>
             <img
-              src="/about.jpg"
+              src="./src/assets/about.jpg"
               alt="About"
               className="w-full h-[450px] object-cover rounded-2xl shadow-xl hover:scale-105 transition duration-500"
             />
@@ -69,8 +69,8 @@ function About() {
 
             <div>
               <img
-                src="/certficate.jpg"
-                alt="certified"
+                src="./src/assets/certficate.jpg"
+                alt="About"
                 className="w-full h-[550px] object-contain rounded-2xl shadow-xl hover:scale-105 transition duration-500"
               />
             </div>

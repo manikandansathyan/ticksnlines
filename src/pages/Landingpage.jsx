@@ -10,7 +10,7 @@ function Landingpage() {
       <section className="mt-16">
 
         <img
-          src="/hero.jpg"
+          src="/src/assets/hero.png"
           alt="Hero"
           className="w-full h-[70vh] object-cover"
         />
