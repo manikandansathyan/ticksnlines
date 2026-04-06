@@ -1,7 +1,7 @@
 import Foot from "../components/Foot"
 import Head from "../components/Head"
 import certImg from '../assets/certficate.jpg';
-import aboutImg from '../assets/about.jpg';
+import aboutImg from '../assets/aboutimg.jpg';
 
 function About() {
   return (
