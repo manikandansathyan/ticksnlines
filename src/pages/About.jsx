@@ -18,7 +18,7 @@ function About() {
 
           <div>
             <img
-              src="./src/assets/about.jpg"
+              src="https://instasize.com/p/9965f1c5dc0ee04e353cb00ace2ec562e5fa308a45e2db5d77146085a6af2573"
               alt="About"
               className="w-full h-[450px] object-cover rounded-2xl shadow-xl hover:scale-105 transition duration-500"
             />
@@ -69,7 +69,7 @@ function About() {
 
             <div>
               <img
-                src="./src/assets/certficate.jpg"
+                src="https://instasize.com/p/6477d6ed2577de3e4c87b276dd6868ec4ead664d30ac8bb9633c0fabfb3610ab"
                 alt="About"
                 className="w-full h-[550px] object-contain rounded-2xl shadow-xl hover:scale-105 transition duration-500"
               />

@@ -4,7 +4,7 @@ function Head() {
       <div className="max-w-screen-xl flex items-center justify-between mx-auto px-6 py-3">
 
         <a href="/" className="flex items-center gap-2 text-xl font-semibold text-gray-800">
-          <img src="./src/assets/logo.jpg" alt="logo" className="h-8 w-8 rounded-full object-cover" />
+          <img src="https://instasize.com/p/f00bce6e7e11bad37c8672cbf14e403a7e13886964adbcd2823ef8f70e4e06fc" alt="logo" className="h-8 w-8 rounded-full object-cover" />
           Ticks N Lines
         </a>
 
