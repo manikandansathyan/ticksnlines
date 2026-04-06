@@ -1,5 +1,6 @@
 import Foot from '../components/Foot'
 import Head from '../components/Head'
+import hero from '../assets/hero.png';
 
 function Landingpage() {
   return (
@@ -10,7 +11,7 @@ function Landingpage() {
       <section className="mt-16">
 
         <img
-          src="/src/assets/hero.png"
+          src={hero}
           alt="Hero"
           className="w-full h-[70vh] object-cover"
         />

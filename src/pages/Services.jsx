@@ -1,6 +1,7 @@
 import Head from '../components/Head'
 import Foot from '../components/Foot'
 import { Card, Accordion, AccordionContent, AccordionPanel, AccordionTitle, Button } from 'flowbite-react'
+import gst from '../assets/gst.jpg';
 
 function Services() {
   return (
@@ -27,7 +28,7 @@ function Services() {
 
           <div>
             <img
-              src="./src/assets/gst.jpg"
+              src={gst}
               alt="GST Services"
               className="w-full h-[450px] object-cover rounded-2xl shadow-xl hover:scale-105 transition duration-500"
             />

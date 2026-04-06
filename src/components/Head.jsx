@@ -1,10 +1,12 @@
+import logo from "../assets/logo.jpg";
+
 function Head() {
   return (
     <nav className="bg-transparent fixed w-full z-20 top-0">
       <div className="max-w-screen-xl flex items-center justify-between mx-auto px-6 py-3">
 
         <a href="/" className="flex items-center gap-2 text-xl font-semibold text-gray-800">
-          <img src="/logo.jpg" alt="logo" className="h-8 w-8 rounded-full object-cover" />
+          <img src={logo} alt="logo" className="h-8 w-8 rounded-full object-cover" />
           Ticks N Lines
         </a>
 

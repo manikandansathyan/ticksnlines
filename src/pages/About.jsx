@@ -1,6 +1,6 @@
 import Foot from "../components/Foot"
 import Head from "../components/Head"
-
+import certImg from '../assets/certficate.jpg';
 
 function About() {
   return (
@@ -18,7 +18,7 @@ function About() {
 
           <div>
             <img
-              src="./src/assets/about.jpg"
+              src={aboutImg}
               alt="About"
               className="w-full h-[450px] object-cover rounded-2xl shadow-xl hover:scale-105 transition duration-500"
             />
@@ -69,8 +69,8 @@ function About() {
 
             <div>
               <img
-                src="./src/assets/certficate.jpg"
-                alt="About"
+                src={certImg}
+                alt="Certified"
                 className="w-full h-[550px] object-contain rounded-2xl shadow-xl hover:scale-105 transition duration-500"
               />
             </div>
