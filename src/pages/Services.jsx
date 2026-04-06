@@ -27,7 +27,7 @@ function Services() {
 
           <div>
             <img
-              src="https://cdn.pixabay.com/photo/2017/06/30/19/16/gst-2459328_1280.jpg"
+              src="/gst.JPG"
               alt="GST Services"
               className="w-full h-[450px] object-cover rounded-2xl shadow-xl hover:scale-105 transition duration-500"
             />
