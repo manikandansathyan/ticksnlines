@@ -10,7 +10,7 @@ function Landingpage() {
       <section className="mt-16">
 
         <img
-          src="https://instasize.com/p/64e55046e6a7a65ce7ddd7defcec356dcb3aa7d54e30cdf623dfc1f5815c29f3"
+          src="/hero.jpg"
           alt="Hero"
           className="w-full h-[70vh] object-cover"
         />

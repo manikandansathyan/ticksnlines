@@ -27,7 +27,7 @@ function Services() {
 
           <div>
             <img
-              src="https://instasize.com/p/63ecec42a64e8af24b4b7298bba21fe374f80e8ef2cc1de402c9deeb66070674"
+              src="/gst.jpg"
               alt="GST Services"
               className="w-full h-[450px] object-cover rounded-2xl shadow-xl hover:scale-105 transition duration-500"
             />
