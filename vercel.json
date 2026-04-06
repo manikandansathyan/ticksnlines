@@ -1,5 +1,8 @@
 {
   "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
+    {
+      "source": "/:path((?!assets/|.*\\.(js|css|png|jpg|jpeg|gif|svg|ico|webp)).*)",
+      "destination": "/index.html"
+    }
   ]
 }
