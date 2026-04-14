@@ -1,88 +1,123 @@
-import { FooterDivider } from "flowbite-react";
-import { BsDribbble, BsFacebook, BsGithub, BsInstagram, BsTwitter } from "react-icons/bs";
+import { Link } from "react-router-dom";
+import { BsFacebook, BsInstagram, BsLinkedin } from "react-icons/bs";
 import { FaPhone } from "react-icons/fa";
 import { MdOutlineMail } from "react-icons/md";
 import logo from "../assets/logo.jpg";
 
 function Foot() {
-    return (
-        <>
-            <FooterDivider />
+  return (
+    <footer className="bg-[#0B1F3A] text-slate-300 pt-16 pb-8">
 
-            <footer className="bg-gray-900 text-gray-300 py-14">
+      <div className="max-w-screen-xl mx-auto px-6">
 
-                <div className="max-w-screen-xl mx-auto px-6">
+        {/* TOP GRID */}
+        <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-10 mb-14">
 
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 mb-12">
+          {/* BRAND */}
+          <div>
+            <div className="flex items-center gap-2 mb-4">
+              <img src={logo} alt="logo" className="h-10 w-10 rounded-full" />
+              <span className="text-white font-semibold text-lg">
+                Ticks N Lines
+              </span>
+            </div>
 
-                        <div>
-                            <img src={logo} alt="logo" className="h-10 mb-4" />
-                            <p className="text-sm text-gray-400">
-                                Simplifying business operations with expert consultancy and reliable solutions.
-                            </p>
-                        </div>
+            <p className="text-sm text-slate-400 leading-relaxed">
+              Delivering reliable accounting, compliance, and advisory services
+              to help businesses operate efficiently and grow confidently.
+            </p>
+          </div>
 
-                        <div>
-                            <h3 className="text-white font-semibold mb-4">Services</h3>
-                            <ul className="space-y-2 text-sm">
-                                <li className="hover:text-white cursor-pointer">GST & Taxation</li>
-                                <li className="hover:text-white cursor-pointer">Company Registration</li>
-                                <li className="hover:text-white cursor-pointer">PF & ESI Compliance</li>
-                                <li className="hover:text-white cursor-pointer">HR Consulting</li>
-                            </ul>
-                        </div>
+          {/* SERVICES */}
+          <div>
+            <h3 className="text-white font-semibold mb-4">Services</h3>
+            <ul className="space-y-2 text-sm">
+              <li><Link to="/services" className="hover:text-white transition">GST & Taxation</Link></li>
+              <li><Link to="/services" className="hover:text-white transition">Accounting & Finance</Link></li>
+              <li><Link to="/services" className="hover:text-white transition">Audit & Assurance</Link></li>
+              <li><Link to="/services" className="hover:text-white transition">Business Consultancy</Link></li>
+            </ul>
+          </div>
 
-                        <div>
-                            <h3 className="text-white font-semibold mb-4">Quick Links</h3>
-                            <ul className="space-y-2 text-sm">
-                                <li className="hover:text-white cursor-pointer">Home</li>
-                                <li className="hover:text-white cursor-pointer">About</li>
-                                <li className="hover:text-white cursor-pointer">Services</li>
-                                <li className="hover:text-white cursor-pointer">Contact</li>
-                            </ul>
-                        </div>
+          {/* QUICK LINKS */}
+          <div>
+            <h3 className="text-white font-semibold mb-4">Quick Links</h3>
+            <ul className="space-y-2 text-sm">
+              <li><Link to="/" className="hover:text-white transition">Home</Link></li>
+              <li><Link to="/about" className="hover:text-white transition">About</Link></li>
+              <li><Link to="/services" className="hover:text-white transition">Services</Link></li>
+              <li><Link to="/contact" className="hover:text-white transition">Contact</Link></li>
+            </ul>
+          </div>
 
-                        <div>
-                            <h3 className="text-white font-semibold mb-4">Contact</h3>
-                            <ul className="space-y-3 text-sm">
-                                <li className="flex items-center gap-2 hover:text-white">
-                                    <MdOutlineMail /> esipf@ticksnlines.com
-                                </li>
-                                <li className="flex items-center gap-2 hover:text-white">
-                                    <FaPhone /> 0484 2543885
-                                </li>
-                                <li className="text-gray-400">
-                                    Opposite CMRL, Industrial Area <br />
-                                    Muppathadom, Aluva <br />
-                                    PIN: 683110
-                                </li>
-                            </ul>
-                        </div>
+          {/* CONTACT */}
+          <div>
+            <h3 className="text-white font-semibold mb-4">Contact</h3>
 
-                    </div>
+            <div className="space-y-3 text-sm">
 
-                    <div className="border-t border-gray-700 pt-6">
-
-                       
-                        <div className="flex justify-center gap-6 mb-4 text-xl">
-                            <BsFacebook className="hover:text-white hover:scale-110 transition cursor-pointer" />
-                            <BsInstagram className="hover:text-white hover:scale-110 transition cursor-pointer" />
-                            <BsTwitter className="hover:text-white hover:scale-110 transition cursor-pointer" />
-                            <BsGithub className="hover:text-white hover:scale-110 transition cursor-pointer" />
-                            <BsDribbble className="hover:text-white hover:scale-110 transition cursor-pointer" />
-                        </div>
-
-                        <div className="text-center text-sm text-gray-500">
-                            © 2018 TicksNLines. All rights reserved.
-                        </div>
-
-                    </div>
-
+              <div className="flex items-start gap-2">
+                <MdOutlineMail className="mt-1" />
+                <div>
+                  <p>esipf@ticksnlines.com</p>
+                  <p>salestax@ticksnlines.com</p>
                 </div>
+              </div>
 
-            </footer>
-        </>
-    )
+              <div className="flex items-center gap-2">
+                <FaPhone />
+                <span>0484 2543885</span>
+              </div>
+
+              <p className="text-slate-400 leading-relaxed">
+                Opposite CMRL, Industrial Area <br />
+                Muppathadom, Aluva <br />
+                Kerala - 683110
+              </p>
+
+            </div>
+          </div>
+
+        </div>
+
+        {/* CTA STRIP */}
+        <div className="bg-blue-600 rounded-2xl px-6 py-6 flex flex-col md:flex-row items-center justify-between gap-4 mb-10">
+
+          <p className="text-white font-medium text-center md:text-left">
+            Need expert help with your business?
+          </p>
+
+          <Link
+            to="/contact"
+            className="bg-white text-blue-600 px-5 py-2 rounded-full flex items-center gap-2 hover:bg-gray-100 transition"
+          >
+            Get Consultation
+            <span className="w-6 h-6 flex items-center justify-center rounded-full bg-blue-600 text-white text-sm">
+              →
+            </span>
+          </Link>
+
+        </div>
+
+        {/* BOTTOM */}
+        <div className="border-t border-slate-700 pt-6 flex flex-col md:flex-row items-center justify-between gap-4">
+
+          <p className="text-sm text-slate-400 text-center md:text-left">
+            © {new Date().getFullYear()} TicksNLines. All rights reserved.
+          </p>
+
+          <div className="flex gap-5 text-lg">
+            <BsFacebook className="hover:text-white transition cursor-pointer" />
+            <BsInstagram className="hover:text-white transition cursor-pointer" />
+            <BsLinkedin className="hover:text-white transition cursor-pointer" />
+          </div>
+
+        </div>
+
+      </div>
+
+    </footer>
+  );
 }
 
-export default Foot
+export default Foot;
